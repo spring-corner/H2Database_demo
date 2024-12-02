@@ -18,7 +18,7 @@ http://localhost:9090/h2-console
 - actor_title table is automatically created by JPA
 
 ```
-jdbc:h2:file:C:/new_software/GitHub/spring-corner/H2Database_demo/data/testdb
+spring.datasource.url=jdbc:h2:mem:testdb
 ```
 
 ```h2
