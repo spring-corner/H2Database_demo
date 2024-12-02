@@ -2,9 +2,9 @@
 
 ## Screenshots
 
-![Spring_message](.README_images/Spring_message.png)
+![Spring_message](README_images/Spring_message.png)
 
-![](.README_images/h2_logged_in.png)
+![](README_images/h2_logged_in.png)
 
 ## Description
 
@@ -23,4 +23,26 @@ spring.datasource.url=jdbc:h2:mem:testdb
 
 ```h2
 SHOW COLUMNS FROM ACTOR_TITLE;
+```
+
+
+## Persisting Data
+
+### Persisting Data
+In `application.properties` file:
+```h2
+spring.datasource.url=jdbc:h2:file:./data/testdb
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.H2Dialect
+ spring.jpa.hibernate.ddl-auto=update
+```
+
+### Not Persisting Data
+
+In `application.properties` file:
+```h2
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.username=sa
+spring.datasource.password=sa
+spring.jpa.defer-datasource-initialization=true
+#spring.jpa.hibernate.ddl-auto=update
 ```
