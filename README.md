@@ -33,7 +33,7 @@ In `application.properties` file:
 ```h2
 spring.datasource.url=jdbc:h2:file:./data/testdb
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.H2Dialect
- spring.jpa.hibernate.ddl-auto=update
+spring.jpa.hibernate.ddl-auto=update
 ```
 
 ### Not Persisting Data
@@ -46,3 +46,9 @@ spring.datasource.password=sa
 spring.jpa.defer-datasource-initialization=true
 #spring.jpa.hibernate.ddl-auto=update
 ```
+
+## Setting up GitHub Token
+
+Paste the Organisation token here: 
+
+![img.png](README_images/img.png)
